@@ -1,12 +1,17 @@
 body {
     
     font-family:Arial;
-    background:url('images/MIT Students.jpg')no-repeat center center fixed;
-    background-size:cover;
+    
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
     margin:0;
     padding-top: 5cm;
     
+    
 }
+
+
 h1 {
     color: blue;
     text-align: center;
@@ -18,7 +23,7 @@ p{
     margin:80 ;
 }
 li{
-    color:yellow;
+    color:red;
     display: inline;
     text-color:blue;
     text-align: justify;
@@ -79,5 +84,27 @@ nav a:hover{
     color:yellow;
 }
 
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
 
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
