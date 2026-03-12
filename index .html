@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machakos Institute of Technology</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo-container">
+<img src="images/MIT LOGO.jpeg" class="logo" alt="MIT Logo">
+
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="About.html">More about MIT</a></li>
+<li><a href="Academic.html">Courses Offered</a></li>
+<li><a href="Admissions.html">Admissions Ongoing</a></li>
+<li><a href="Management.html">Management</a></li>
+<li><a href="News.html">News/Events</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="Contact.html">Contact Us</a></li>
+</ul>
+
+</nav>
+
+
+<div class="slideshow">
+
+<img class="slide" src="images/MIT Building.webp"alt="MIT Building">
+<img class="slide" src="images/MIT Students.jpg"alt="MIT Students">
+<img class="slide" src="images/images/MIT Graduation.webp "alt="MIT Graduation">
+
+<img class="slide" src="images/images/MIT Sports.webp"alt="MIT Sports">
+
+</div>
+
+
+<section class="content">
+
+<p>
+Welcome to Machakos Institute of Technology located in Machakos town,
+Kinyali House 2<sup>nd</sup> floor.
+</p>
+
+
+<h3>Technology and Engineering Courses</h3>
+
+<ul> 
+<li><mark>Electrical</mark></li>
+<li><mark>Mechanical</mark></li>
+<li><mark>Automotive</mark></li>
+<li><mark>Welding</mark></li>
+</ul>
+
+
+<h3>Cosmetic and Beauty Courses</h3>
+
+<ol>
+<li><mark>Hairdressing</mark></li>
+<li><mark>Makeup</mark></li>
+<li><mark>Manicure and Pedicure</mark></li>
+</ol>
+
+
+<h3>ICT Related Courses</h3>
+
+<ol>
+<li><mark>Computer Maintenance</mark></li>
+<li><mark>Programming</mark></li>
+<li><mark>Computer Packages</mark></li>
+<li><mark>Networking</mark></li>
+</ol>
+
+
+<p>
+The institution is known for its quality education and skilled instructors.<br>
+Students at Machakos Institute of Technology have access <br>to modern facilities
+and resources to enhance their learning experience.
+</p>
+
+
+<p class="links">
+<a href="Admissions.html">Admissions Ongoing</a> |
+<a href="Academic.html">Courses Offered</a>
+</p>
+
+</section>
+
+
+
+<footer>
+<p>© 2026 Machakos Institute of Technology</p>
+</footer>
+
+
+
+<script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides(){
+
+let slides = document.getElementsByClassName("slide");
+
+for(let i = 0; i < slides.length; i++){
+slides[i].style.display = "none";
+}
+
+slideIndex++;
+
+if(slideIndex > slides.length){
+slideIndex = 1;
+}
+
+slides[slideIndex-1].style.display = "block";
+
+setTimeout(showSlides,3000);
+
+}
+
+</script>
+
+
+</body>
+</html>
