@@ -1,121 +1,125 @@
-body{
-font-family: Arial, sans-serif;
-margin:0;
-padding:0;
-background-color:white;
-margin-top: auto;
-}
-p{
-    color:blue;
-
-}
-
-
-.navbar{
-background-color:#003366;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 20px;
-position:sticky;
-top:0;
-z-index:1000;
-height: 5cm;
-margin-bottom: 20px;
-width: 100%;
-margin-top: 20px;
+/* ===== Body ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* stack content vertically */
+    align-items: center;    /* center horizontally */
 }
 
-
-.logo-container{
-display:flex;
-align-items:center;
+/* ===== Paragraphs ===== */
+p {
+    color: blue;
 }
 
-
-.logo{
-width:200px;
-height:auto;
+/* ===== Header ===== */
+.header {
+    display: flex;
+    flex-direction: column; /* logo above title */
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
 }
 
-
-.site-name{
-color:white;
-margin-left:10px;
-font-size:20px;
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-
-.nav-links{
-list-style:none;
-display:flex;
-margin:0;
-padding:0;
+.header h1 {
+    color: #003366;
+    margin: 0;
 }
 
-
-.nav-links li{
-margin-left:20px;
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #003366;
+    display: flex;
+    justify-content: center; /* center nav links */
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-
-.nav-links a{
-text-decoration:none;
-color:red;
-font-size:16px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-
-.nav-links a:hover{
-color:yellow;
+.nav-links li {
+    margin: 0 15px;
 }
 
-
-.slideshow{
-max-width:300px;
-margin:auto;
-overflow:hidden;
+.nav-links a {
+    text-decoration: none;
+    color: red;
+    font-size: 16px;
 }
 
-
-.slide{
-width:100%;
-display:none;
+.nav-links a:hover {
+    color: yellow;
 }
 
-
-.content{
-padding:20px;
-max-width:1000px;
-margin:auto;
-background:white;
+/* ===== Slideshow ===== */
+.slideshow {
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* stack images vertically */
+    align-items: center;
 }
 
-
-.content h3{
-color:#003366;
+.slide {
+    width: 100%;
+    display: none; /* JS will show slides one at a time */
+    margin-bottom: 10px;
 }
 
-
-.links a{
-text-decoration:none;
-color:#003366;
-font-weight:bold;
+/* ===== Content ===== */
+.content {
+    padding: 20px;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    background: white;
 }
 
-
-footer{
-text-align:center;
-padding:15px;
-background:red;
-color:red;
-margin-top:20px;
+.content h3 {
+    color: #003366;
 }
-.fa-facebook{
-    color:blue;
+
+.links a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: red;
+    color: white; /* make text visible */
+    margin-top: 20px;
+}
+
+/* ===== Social Icons ===== */
+.fa-facebook {
+    color: blue;
     font-size: 50px;
-    
 }
-.fa-facebook:hover{
-    color:rgb(20, 117, 25);
+
+.fa-facebook:hover {
+    color: rgb(20, 117, 25);
 }
