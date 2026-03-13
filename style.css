@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
-    display: flex;
     flex-direction: column; /* stack content vertically */
     align-items: center;    /* center horizontally */
 }
@@ -14,14 +13,6 @@ p {
     color: blue;
 }
 
-/* ===== Header ===== */
-.header {
-    display: flex;
-    flex-direction: column; /* logo above title */
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
-}
 
 .logo {
     width: 200px;
