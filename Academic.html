@@ -25,6 +25,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     <li><a href="Contact.html">Contact</a></li>
   </ul>
 </nav>
+<script>
+const toggleBtn = document.getElementById('menuToggle');
+const navBarUl = document.querySelector('.horizontal-nav ul');
+
+toggleBtn.addEventListener('click', () => {
+  navBarUl.classList.toggle('show'); // toggle slide down/up
+});
+</script>
     
         <p>
             MIT offers various courses on electrical,engineering,hospitality,masonsry<br>
