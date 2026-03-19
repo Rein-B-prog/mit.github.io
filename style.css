@@ -1,24 +1,17 @@
 /* ===== Body ===== */
 body {
     font-family: Arial, sans-serif;
-    margin: 5px;
-    padding: 20px;
-    background-color: white;
+    margin: 2px;
+    padding: 10px;
+    background:linear-gradient(rgb(99, 15, 15),rgb(219, 26, 161),rgb(3, 245, 43));
     flex-direction: column; /* stack content vertically */
-    align-items: center;    /* center horizontally */
+    align-items:normal;
+
 }
 
 /* ===== Paragraphs ===== */
 p {
-    color: blue;
-}
-
-
-.logo {
-    width: 200px;
-    height: auto;
-    margin-bottom: 10px;
-    background-color:blue
+    color: rgb(250, 225, 3);
 }
 
 .header h1 {
@@ -30,7 +23,17 @@ p {
 
 /* Desktop horizontal nav */
 .horizontal-nav {
-    background-color: #003366;
+    background: linear-gradient(90deg, rgb(233, 229, 26), rgb(9, 55, 70), rgb(201, 8, 8), green);
+}
+header{
+    
+    color:aqua;
+    padding:10px;
+    text-align:center;
+    font-size: xx-large;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .horizontal-nav ul {
@@ -41,6 +44,8 @@ p {
     overflow: hidden;          /* Needed for slide animation */
     max-height: 1000px;        /* large enough for desktop */
     transition: max-height 0.5s ease; /* smooth slide */
+    text-align: center;
+
 }
 
 .horizontal-nav ul li {
@@ -51,9 +56,12 @@ p {
     display: block;
     padding: 12px 20px;
     color: white;
-    text-decoration: none;
+    text-decoration: chartreuse;
     font-weight: bold;
     transition: background 0.3s;
+    color:aqua;
+    text-align: center;
+    font-size:xx-large
 }
 
 .horizontal-nav ul li a:hover {
@@ -110,11 +118,11 @@ p {
 
 /* ===== Content ===== */
 .content {
-    padding: 20px;
-    max-width: 1000px;
-    width: 90%;
+    padding: 10px;
+
+    
     margin: auto;
-    background: white;
+    background:linear-gradient(rgb(124, 64, 97),rgb(41, 70, 97),rgb(3, 245, 43));
 }
 
 .content h3 {
@@ -131,8 +139,8 @@ p {
 footer {
     text-align: center;
     padding: 15px;
-    background: red;
-    color: white; /* make text visible */
+    background:linear-gradient(rgb(236, 130, 8),rgb(201, 8, 8));
+    color: red; /* make text visible */
     margin-top: 20px;
 }
 
@@ -155,6 +163,14 @@ aside{
 flex-direction: column
 
     
+}
+.blink {
+  animation: blink-animation 0.8s infinite;
+}
+@keyframes blink-animation {
+  0%   { opacity: 1; color: rgb(4, 247, 4); }
+  50%  { opacity: 0; color: rgb(243, 13, 224); }
+  100% { opacity: 1; color: rgb(12, 240, 12); }
 }
 
 #submit{
