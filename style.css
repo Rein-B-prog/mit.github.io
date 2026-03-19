@@ -1,8 +1,8 @@
 /* ===== Body ===== */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 20px;
     background-color: white;
     flex-direction: column; /* stack content vertically */
     align-items: center;    /* center horizontally */
@@ -18,6 +18,7 @@ p {
     width: 200px;
     height: auto;
     margin-bottom: 10px;
+    background-color:blue
 }
 
 .header h1 {
@@ -144,3 +145,25 @@ footer {
 .fa-facebook:hover {
     color: rgb(20, 117, 25);
 }
+aside{
+    background-color: red;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 20cm;
+    
+flex-direction: column
+
+    
+}
+
+#submit{
+    background-color:blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width:4cm;
+    margin-top:20px;
+}
+
