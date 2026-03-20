@@ -1,23 +1,29 @@
 /* ===== Body ===== */
 body {
     font-family: Arial, sans-serif;
-    margin: 2px;
+    margin: 0;
     padding: 10px;
     background: linear-gradient(rgb(99, 15, 15), rgb(219, 26, 161), rgb(3, 245, 43));
 }
-.h3{
+
+/* ===== Headings ===== */
+h2{
     color:red;
+}
+h3 {
+    color: red;
 }
 
 /* ===== Paragraphs ===== */
 p {
-    color:aqua
+    color:black;
+    font-weight: bold;
 }
 
 /* ===== Header ===== */
 header {
     color: aqua;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     font-size: xx-large;
     font-style: italic;
@@ -29,7 +35,6 @@ header {
     background: linear-gradient(90deg, rgb(233, 229, 26), rgb(9, 55, 70), rgb(201, 8, 8), green);
 }
 
-/* NAV LIST */
 .horizontal-nav ul {
     list-style: none;
     display: flex;
@@ -37,21 +42,18 @@ header {
     padding: 0;
     margin: 0;
     overflow: hidden;
-
-    /* animation setup */
     max-height: 1000px;
     transition: max-height 0.5s ease;
 }
 
-/* NAV ITEMS */
 .horizontal-nav ul li a {
     display: block;
     padding: 12px 20px;
-    text-decoration: none; /* FIXED (was chartreuse ❌) */
+    text-decoration: none;
     font-weight: bold;
     color: aqua;
     text-align: center;
-    font-size: 20px; /* reduced for better mobile fit */
+    font-size: 18px;
     transition: background 0.3s;
 }
 
@@ -65,31 +67,36 @@ header {
     background-color: #003366;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px;
     font-size: 18px;
     cursor: pointer;
+    width: 100%;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-
     .menu-toggle {
         display: block;
-        width: 100%;
     }
 
     .horizontal-nav ul {
         flex-direction: column;
-        max-height: 0; /* hidden */
+        max-height: 0;
     }
 
     .horizontal-nav ul.show {
-        max-height: 500px; /* smooth slide */
+        max-height: 500px;
     }
 
     .horizontal-nav ul li a {
         border-bottom: 1px solid #fff;
-        font-size: 18px;
+    }
+
+    .sidebar {
+        float: none;
+        width: 90%;
+        margin: 20px auto;
+        
     }
 }
 
@@ -98,10 +105,7 @@ header {
     max-width: 800px;
     width: 90%;
     margin: 20px auto;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .slide {
@@ -112,22 +116,23 @@ header {
 
 /* ===== Content ===== */
 .content {
-    
     margin: auto;
-    
+    padding: 20px;
     background: linear-gradient(rgb(124, 64, 97), rgb(41, 70, 97), rgb(3, 245, 43));
-    
+    border-radius: 10px;
+    font-weight: bolder;
 }
 
 .content h3 {
-    color:aqua;
+    color:red;
 }
 
+/* ===== Links ===== */
 .links a {
     text-decoration: none;
     color: #003366;
     font-weight: bold;
-    margin-right: 15px; /* spacing added */
+    margin-right: 15px;
 }
 
 /* ===== Footer ===== */
@@ -135,32 +140,37 @@ footer {
     text-align: center;
     padding: 15px;
     background: linear-gradient(rgb(236, 130, 8), rgb(201, 8, 8));
-    color: white;
+
     margin-top: 20px;
+
+}
+footer p{
+    color:black;
+    font-weight: bolder;
 }
 
 /* ===== Social Icons ===== */
 .fa-facebook {
     color: blue;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .fa-facebook:hover {
     color: rgb(20, 117, 25);
 }
 
-/* ===== Aside ===== */
+/* ===== Sidebar ===== */
 .sidebar {
-    background-color: red;
-    padding: 10px;
-    margin: 20px auto;
-    max-width: 1000px;
-    width: 90%;
-    display:flex;
-    float:left;
-    justify-content:top  ;\
-    ;
-
+    background: linear-gradient(rgb(40, 176, 185), rgb(87, 87, 30), rgb(86, 5, 153));
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    float: right;
+    border-radius: 10px;
+    
+}
+.sidebar a{
+    color:aqua;
 }
 
 /* ===== Blinking Link ===== */
@@ -177,12 +187,55 @@ footer {
 
 /* ===== Button ===== */
 #submit {
+    display: block;
+    margin: 20px auto;
     background-color: blue;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     cursor: pointer;
     width: 150px;
-    margin-top: 20px;
-    button-align: center;
+    border-radius: 5px;
+}
+
+#backToTop {
+    display: none; /* Hidden initially */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    background: linear-gradient(45deg, blue, yellow, red, green);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s, opacity 0.3s;
+    animation: pulse 2s infinite;
+}
+
+/* Slightly grow on hover */
+#backToTop:hover {
+    transform: scale(1.3);
+    opacity: 0.9;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.user{
+    color:red;
+    background:linear-gradient(45deg, blue, yellow, red, green);
+
+    
+}
+.user input{
+    width: 10cm;
+    height: 1cm;
+    margin:2px;
 }

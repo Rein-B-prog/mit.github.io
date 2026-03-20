@@ -1,78 +1,127 @@
 <!DOCTYPE html>
 <html>
-    <head>    
-        <link rel="stylesheet" href="style.css">
-        <title>Machakos Institute of Technology</title>
-        <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-    <body>
+<head>
+    <title>Academic - Machakos Institute of Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 
-       <!-- Mobile toggle button -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- 🔥 SIDEBAR (TOP LEFT) -->
+<aside class="sidebar">
+  <h3>Connect with us</h3>
+
+  <a href="https://www.facebook.com/mit.ac.ke" target="_blank">
+    <i class="fa-brands fa-facebook"></i> Facebook
+  </a><br>
+
+  <a href="https://wa.me/254742253342" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a><br>
+
+  <a href="mailto:mit@gmail.com">
+    <i class="fa-solid fa-envelope"></i> mit@gmail.com
+  </a>
+</aside>
+
+<!-- Mobile toggle button -->
 <button class="menu-toggle" id="menuToggle">☰ Menu</button>
 
-<!-- Navigation bar -->
-<nav class="horizontal-nav" id="navBar">
-    <header class="blink">
-  <p style="color:green;">Machakos Institute of Technology</p>
-  <P>Master the training experience the rewards</P>
-</header>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About.html">About</a></li>
-    <li><a href="Academic.html">Academic</a></li>
-    <li><a href="Admissions.html">Admissions</a></li>
-    <li><a href="Application.html"class="blink">Apply</a></li>
-    <li><a href="News.html">News</a></li>
-    <li><a href="Contact.html">Contact</a></li>
-  </ul>
-</nav>
-<script>
-const toggleBtn = document.getElementById('menuToggle');
-const navBarUl = document.querySelector('.horizontal-nav ul');
+<!-- 🔷 NAVBAR -->
+<nav class="horizontal-nav">
+    <header>
+        <p style="color:red;">Machakos Institute of Technology</p>
+        <p class="blink">Master the training experience the rewards</p>
+    </header>
 
-toggleBtn.addEventListener('click', () => {
-  navBarUl.classList.toggle('show'); // toggle slide down/up
-});
-</script>
-    
-        <p>
-            MIT offers various courses on electrical,engineering,hospitality,masonsry<br>
-         ICT and more related courses.
-            
-        </p>
+    <ul id="navBar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Academic.html">Academic</a></li>
+        <li><a href="Admissions.html">Admissions</a></li>
+        <li><a href="Application.html" class="blink">Apply</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- 🔶 CONTENT -->
+<section class="content">
 
 <h2>Machakos Institute of Technology Courses</h2>
-<p>Machakos Institute of Technology (MIT) offers a diverse range of courses<br> across various schools, catering to different career paths.<br> 
-    Here are some of the courses available at MIT:</p>
-<p><mark>School of Social Work and Community Development:</mark></p>
-<p> Prepares students for careers in social development, welfare, and community service.</p>
-<p><mark>School of Business Education:</mark></p>
-<p> Offers programs in business management, project planning, and human resources.</p>
-<p><mark>School of Applied and Health Sciences:</mark></p>
-<p> Focuses on health sector careers, including nutrition and community health.</p>
-<p><mark>School of Computing and Information Technology:</mark></p>
-<p> Provides courses in information technology and digital skills.</p>
-<p><mark>School of Hospitality Management:</mark></p>
-<p> Equips students with practical skills for the hospitality and tourism industry.</p>
-<p><mark>School of Accounts and Finance:</mark></p>
-<p> Offers training in accounting and finance, preparing students for professional certifications.</p>
-<p><mark>School of Hairdressing and Beauty Therapy:</mark></p>
-<p> Focuses on the beauty industry, offering courses in hairdressing and beauty therapy.</p>
-<p><mark>School of Engineering:</mark></p>
-<p> Provides programs in electrical and electronics engineering, plumbing, and more.</p>
-<p>The institute also offers diploma and certificate courses<br>
-     with fees varying based on the course level and mode of study. <br> For more detailed information on courses, fees, and admission requirements<br>
-      you can visit the official MIT website or contact their admissions office.</p>
 
-<p>Follow us on our facebook page: <a href="https://www.facebook.com/mit.ac.ke" target="_blank">
-    <i class="fa-brands fa-facebook"></i></a>
-      <a href="https://wa.me/0742253342" target="_blank">
-    <i class="fa-brands fa-whatsApp"></i>
-</a></p>
+<p>MIT offers various courses in electrical, engineering, hospitality, masonry, ICT, and more.</p>
+
+<p>MIT offers a diverse range of programs across different schools:</p>
+
+<h3>School of Social Work and Community Development</h3>
+<p>Prepares students for careers in social development, welfare, and community service.</p>
+
+<h3>School of Business Education</h3>
+<p>Programs in business management, project planning, and human resources.</p>
+
+<h3>School of Applied and Health Sciences</h3>
+<p>Focuses on health sector careers, including nutrition and community health.</p>
+
+<h3>School of Computing and Information Technology</h3>
+<p>Courses in information technology and digital skills.</p>
+
+<h3>School of Hospitality Management</h3>
+<p>Practical skills for hospitality and tourism industry careers.</p>
+
+<h3>School of Accounts and Finance</h3>
+<p>Training in accounting and finance for professional certifications.</p>
+
+<h3>School of Hairdressing and Beauty Therapy</h3>
+<p>Courses in hairdressing and beauty therapy.</p>
+
+<h3>School of Engineering</h3>
+<p>Programs in electrical and electronics engineering, plumbing, and more.</p>
+
+<p>The institute also offers diploma and certificate courses. Fees vary by course level and mode of study. For more details, visit the official MIT website or contact the admissions office.</p>
 
 
 
+</section>
 
-        </body>
-        </html>
+<button id="backToTop" title="Go to top">↑</button>
+<script>
+const backToTopBtn = document.getElementById("backToTop");
+
+// Show button after scrolling 100px
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+});
+
+// Smooth scroll to top on click
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+
+<!-- 🔻 FOOTER -->
+<footer>
+<p>© 2026 Machakos Institute of Technology<br>Master the training experience the rewards</p>
+</footer>
+
+<!-- 🔥 MOBILE MENU SCRIPT -->
+<script>
+const toggleBtn = document.getElementById('menuToggle');
+const navBarUl = document.getElementById('navBar');
+
+toggleBtn.addEventListener('click', () => {
+  navBarUl.classList.toggle('show');
+});
+</script>
+
+</body>
+</html>

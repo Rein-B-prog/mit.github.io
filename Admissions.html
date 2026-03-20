@@ -1,76 +1,128 @@
 <!DOCTYPE html>
-<html>
-    <head>    
-        <link rel="stylesheet" href="style.css">
-        <title>Machakos Institute of Technology</title>.
-    </head>
-    <body>
-      
-            
-        
-        
-    <!-- Mobile toggle button -->
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machakos Institute of Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+<!-- 🔥 SIDEBAR (TOP LEFT) -->
+<aside class="sidebar">
+  <h3>Connect with us</h3>
+
+  <a href="https://www.facebook.com/mit.ac.ke" target="_blank">
+    <i class="fa-brands fa-facebook"></i> Facebook
+  </a><br>
+
+  <a href="https://wa.me/254742253342" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a><br>
+
+  <a href="mailto:mit@gmail.com">
+    <i class="fa-solid fa-envelope"></i> mit@gmail.com
+  </a>
+</aside>
+
+<!-- Mobile toggle button -->
 <button class="menu-toggle" id="menuToggle">☰ Menu</button>
 
-<!-- Navigation bar -->
-<nav class="horizontal-nav" id="navBar">
-    <header class="blink">
-  <p style="color:green;">Machakos Institute of Technology</p>
-  <P>Master the training experience the rewards</P>
-</header>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About.html">About</a></li>
-    <li><a href="Academic.html">Academic</a></li>
-    <li><a href="Admissions.html">Admissions</a></li>
-    <li><a href="Application.html"class="blink">Apply</a></li>
-    <li><a href="News.html">News</a></li>
-    <li><a href="Contact.html">Contact</a></li>
-  </ul>
-</nav>
-<script>
-const toggleBtn = document.getElementById('menuToggle');
-const navBarUl = document.querySelector('.horizontal-nav ul');
+<!-- 🔷 NAVBAR -->
+<nav class="horizontal-nav">
+    <header>
+        <p style="color:red;">Machakos Institute of Technology</p>
+        <p class="blink">Master the training experience the rewards</p>
+    </header>
 
-toggleBtn.addEventListener('click', () => {
-  navBarUl.classList.toggle('show'); // toggle slide down/up
+    <ul id="navBar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Academic.html">Academic</a></li>
+        <li><a href="Admissions.html">Admissions</a></li>
+        <li><a href="Application.html" class="blink">Apply</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <script>
+        const toggleBtn = document.getElementById('menuToggle');
+        const navBarUl = document.querySelector('.horizontal-nav ul');
+
+        toggleBtn.addEventListener('click', () => {
+            navBarUl.classList.toggle('show'); // toggle slide down/up
+        });
+    </script>
+
+    <!-- 🔶 CONTENT -->
+<section class="content">
+
+        <h1><b>ADMISSION PROCEDURES</b></h1>
+
+        <p><mark>(a) Apply online today by filling the COURSE APPLICATION FORM<br>
+        or<br>
+        (b) Download application form here MIT APPLICATION FORM</mark></p>
+
+        <p>1. A student must apply for a course of study (Application letter).</p>
+        <p>2. The front office team will ascertain whether the student is qualified to pursue that course.</p>
+
+        <h2><mark>KNEC COURSES</mark></h2>
+        <p>For Diploma courses: minimum grade C- and above.<br>
+        For Certificate courses: minimum grade D plain and above.<br>
+        For Artisan Courses: minimum grade D-.</p>
+
+        <h2><mark>KASNEB COURSES</mark></h2>
+        <p>CPA: minimum grade C+<br>
+        ATD: minimum grade C- and above<br>
+        Certificate in Accountancy Management Skills (CAMS): minimum grade D+ and above.</p>
+
+        <p>3. If qualified, students will be asked to pay an admission fee and fill the admission form or submit the downloaded form with the admission fee:</p>
+        <ul>
+            <li>Kshs 2,000 for long courses</li>
+            <li>Kshs 500 for short courses</li>
+        </ul>
+        <p>This money is payable at the MIT bank accounts:</p>
+        <ul>
+            <li>Equity Bank Ltd – Machakos Branch, A/C 0600294705830</li>
+            <li>Co-operatives Bank Ltd – Machakos Branch, A/C 01136039381600</li>
+            <li>All examination fees: Equity Bank Ltd – Machakos Branch, A/C: 0600298154392</li>
+        </ul>
+        <p>Paybill no: 906650, Account No: Name of the student.</p>
+
+        <h2 style="color:yellow;">REQUIREMENTS FOR ADMISSION</h2>
+        <ul style="color:red;">
+            <li>Copy of birth certificate</li>
+            <li>Copy of I.D / Waiting card / Baptismal card</li>
+            <li>Copies of academic certificates</li>
+            <li>Two coloured passport photos</li>
+        </ul>
+    </section>
+
+    <button id="backToTop" title="Go to top">↑</button>
+<script>
+const backToTopBtn = document.getElementById("backToTop");
+
+// Show button after scrolling 100px
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+});
+
+// Smooth scroll to top on click
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
 </script>
+<!-- 🔻 FOOTER -->
+<footer>
+<p>© 2026 Machakos Institute of Technology<br>Master the training experience the rewards</p>
+</footer>
 
 
-<h1><b>ADMISSION PROCEDURES</b></h1>
-<p><mark>(a) Apply online today by filling the  COURSE APPLICATION FORM<br>
-
-or
-
-(b) Download application form here MIT APPLICATION FORM</mark></p>
-
-<p>1. A student must apply for a course of study (Application letter)</p>
-
-<p>2. The front office team will ascertain whether the student is qualified to pursue that course. </p>
-
-<p><mark>KNEC COURSE</mark></body>p>
-
-<p>For Diploma courses; one MUST have a minimum grade of C- Minus and above while for <br>Certificate courses one MUST have at least D plain and above and<br> for Artisan Courses one MUST have a D- minus.</p>
-
-<p><mark>KASNEB COURSES</mark></p>
-
-<p>For CPA one should have a minimum grade of a C+ plus, for ATD one should have a minimum grade<br> of a C- minus and above while Certificate in<br> Accountancy Management Skills (CAMS) one should have D+ plus and above.</p>
-
-<p>3. If qualified they will be asked to pay an admission fee and then fill the admission form or <br>if downloaded from our website submit it accompanied<br> with the admission fee. i.e. Kshs 2,000<br> for long courses and Kshs 500 for short courses .<br>This money is payable at the MIT bank accounts.</p>
-
-<p><style ="color:yellow;></style>Equity Bank Ltd<sup> -</sup>  Machakos Branch, A/C 0600294705830 payable at any Equity Bank Branch</p>
-<p>Co-operatives Bank Ltd <sup>-</sup> Machakos Branch, A/C 01136039381600 Payable at any Cooperative Bank Branch;</p>
-<p>For All examinations fees; Pay at Equity Bank Ltd <sup>-</sup> Machakos Branch, A/C: 0600298154392 payable at any Equity Branch</p>
-<p>Paybill no: 906650, Account No: Name of the student.</p></style>
-<p style ="color:yellow;">REQUIREMENTS FOR ADMISSION</p>
-<p style =color:red;>Copy of birth certificate</p>
-<p style="color:red;">Copy of I.D/ waiting card/ baptismal card</p>
-<p style="color:red;">Copies of  academic certificates</p>
-<p style="color:red;">Two coloured passports</p></style>
-
-  
-
-
-        </body>
-        </html>
+</body>
+</html>

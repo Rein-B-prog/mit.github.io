@@ -7,43 +7,53 @@
 <title>Machakos Institute of Technology</title>
 <link rel="icon" type="image/x-icon" href="images/MIT LOGO.jpeg">
 <link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  
+
+<!-- 🔥 SIDEBAR (TOP LEFT) -->
+<aside class="sidebar">
+  <h3>Connect with us</h3>
+
+  <a href="https://www.facebook.com/mit.ac.ke" target="_blank">
+    <i class="fa-brands fa-facebook"></i> Facebook
+  </a><br>
+
+  <a href="https://wa.me/254741153342" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a><br>
+
+  <a href="mailto:mit@gmail.com">
+    <i class="fa-solid fa-envelope"></i> mit@gmail.com
+  </a>
+</aside>
 
 <!-- Mobile toggle button -->
 <button class="menu-toggle" id="menuToggle">☰ Menu</button>
 
-<!-- Navigation bar -->
-<nav class="horizontal-nav" id="navBar">
-<header class="blink">
-  <p style="color:rgb(2, 248, 64);">Machakos Institute of Technology</p>
-  <P>Master the training experience the rewards</P>
+<!-- 🔷 NAVBAR -->
+<nav class="horizontal-nav">
+<header>
+  <p style="color:rgb(248, 2, 22);">Machakos Institute of Technology</p>
+  <p class="blink">Master the training experience the rewards</p>
 </header>
-  
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About.html">About</a></li>
-    <li><a href="Academic.html">Academic</a></li>
-    <li><a href="Admissions.html">Admissions</a></li>
-    <li><a href="Application.html"class="blink">Apply</a></li>
-    <li><a href="News.html">News</a></li>
-    <li><a href="Contact.html">Contact</a></li>
-  </ul>
+
+<ul id="navBar">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="Academic.html">Academic</a></li>
+  <li><a href="Admissions.html">Admissions</a></li>
+  <li><a href="Application.html" class="blink">Apply</a></li>
+  <li><a href="News.html">News</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+</ul>
 </nav>
-<script>
-const toggleBtn = document.getElementById('menuToggle');
-const navBarUl = document.querySelector('.horizontal-nav ul');
 
-toggleBtn.addEventListener('click', () => {
-  navBarUl.classList.toggle('show'); // toggle slide down/up
-});
-</script>
-
-
-
-
+<!-- 🔶 CONTENT -->
 <section class="content">
 
 <p>
@@ -51,9 +61,7 @@ Welcome to Machakos Institute of Technology located in Machakos town,
 Kinyali House 2<sup>nd</sup> floor.
 </p>
 
-
 <h3 class="blink">Technology and Engineering Courses</h3>
-
 <ul> 
 <li><mark>Electrical</mark></li>
 <li><mark>Mechanical</mark></li>
@@ -61,18 +69,14 @@ Kinyali House 2<sup>nd</sup> floor.
 <li><mark>Welding</mark></li>
 </ul>
 
-
 <h3 class="blink">Cosmetic and Beauty Courses</h3>
-
 <ol>
 <li><mark>Hairdressing</mark></li>
 <li><mark>Makeup</mark></li>
 <li><mark>Manicure and Pedicure</mark></li>
 </ol>
 
-
 <h3 class="blink">ICT Related Courses</h3>
-
 <ol>
 <li><mark>Computer Maintenance</mark></li>
 <li><mark>Programming</mark></li>
@@ -80,62 +84,51 @@ Kinyali House 2<sup>nd</sup> floor.
 <li><mark>Networking</mark></li>
 </ol>
 
-
 <p>
 The institution is known for its quality education and skilled instructors.<br>
 Students at Machakos Institute of Technology have access <br>to modern facilities
 and resources to enhance their learning experience.
 </p>
 
-
 <p class="links">
 <a href="Admissions.html">Admissions Ongoing</a> 
 <a href="Academic.html">Courses Offered</a>
-
 </p>
-
 
 </section>
 
-<aside class="sidebar">
-<img src="images/MIT LOGO.jpeg" alt="MIT LOGO" class="logo">
-</aside>  
-  
-
-  
-<footer>
-<p style ="color:red;">© 2026 Machakos Institute of Technology</p>
-</footer>
 
 
-
+<!-- 🔥 MENU TOGGLE SCRIPT -->
 <script>
+const toggleBtn = document.getElementById('menuToggle');
+const navBarUl = document.getElementById('navBar');
 
-let slideIndex = 0;
-showSlides();
-
-function showSlides(){
-
-let slides = document.getElementsByClassName("slide");
-
-for(let i = 0; i < slides.length; i++){
-slides[i].style.display = "none";
-}
-
-slideIndex++;
-
-if(slideIndex > slides.length){
-slideIndex = 1;
-}
-
-slides[slideIndex-1].style.display = "block";
-
-setTimeout(showSlides,3000);
-
-}
-
+toggleBtn.addEventListener('click', () => {
+  navBarUl.classList.toggle('show');
+});
 </script>
+<button id="backToTop" title="Go to top">↑</button>
+<script>
+const backToTopBtn = document.getElementById("backToTop");
 
+// Show button after scrolling 100px
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+});
 
+// Smooth scroll to top on click
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+<!-- 🔻 FOOTER -->
+<footer>
+<p>© 2026 Machakos Institute of Technology<br>Master the training experience the rewards</p>
+</footer>
 </body>
 </html>

@@ -2,32 +2,52 @@
 <html>
     <head>    
         <link rel="stylesheet" href="style.css">
-        <title>Machakos Institute of Technology</title>.
+        <title>Machakos Institute of Technology</title>
+        <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
 
-        
+        <!-- 🔥 SIDEBAR (TOP LEFT) -->
+<aside class="sidebar">
+  <h3>Connect with us</h3>
+
+  <a href="https://www.facebook.com/mit.ac.ke" target="_blank">
+    <i class="fa-brands fa-facebook"></i> Facebook
+  </a><br>
+
+  <a href="https://wa.me/254741153342" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a><br>
+
+  <a href="mailto:mit@gmail.com">
+    <i class="fa-solid fa-envelope"></i> mit@gmail.com
+  </a>
+</aside>
 
 <!-- Mobile toggle button -->
 <button class="menu-toggle" id="menuToggle">☰ Menu</button>
 
-<!-- Navigation bar -->
-<nav class="horizontal-nav" id="navBar">
-
-    <header class="blink">
-  <p style="color:green;">Machakos Institute of Technology</p>
-  <P>Master the training experience the rewards</P>
+<!-- 🔷 NAVBAR -->
+<nav class="horizontal-nav">
+<header>
+  <p style="color:rgb(248, 2, 22);">Machakos Institute of Technology</p>
+  <p class="blink">Master the training experience the rewards</p>
 </header>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About.html">About</a></li>
-    <li><a href="Academic.html">Academic</a></li>
-    <li><a href="Admissions.html">Admissions</a></li>
-    <li><a href="Application.html"class="blink">Apply</a></li>
-    <li><a href="News.html">News</a></li>
-    <li><a href="Contact.html">Contact</a></li>
-  </ul>
+
+<ul id="navBar">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="Academic.html">Academic</a></li>
+  <li><a href="Admissions.html">Admissions</a></li>
+  <li><a href="Application.html" class="blink">Apply</a></li>
+  <li><a href="News.html">News</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+</ul>
 </nav>
+
+
+
 <script>
 const toggleBtn = document.getElementById('menuToggle');
 const navBarUl = document.querySelector('.horizontal-nav ul');
@@ -36,6 +56,9 @@ toggleBtn.addEventListener('click', () => {
   navBarUl.classList.toggle('show'); // toggle slide down/up
 });
 </script>
+<!-- 🔶 CONTENT -->
+<section class="content">
+
 <p style ="color:rgb(13, 248, 5);"><strong><i>PRINCIPAL<sup>'</sup>S END OF YEAR MESSAGE 2025</i></strong></p>
 <p>I take this opportunity to express my gratitude, to all Board members, Directors<br> Senior management, Teaching staff, Support staff, Parents, Stake holders and students. <br>As we conclude the academic year, I celebrate all the achievements, hard work<br> and remarkable milestones we have achieved together as a team.
 
@@ -52,7 +75,29 @@ Let<sup>'</sup>s us remember the lessons we have learned, cherish the memories w
 <p><strong>PRINCIPAL</strong></p>
 
 
+</section>
+<button id="backToTop" title="Go to top">↑</button>
+<script>
+const backToTopBtn = document.getElementById("backToTop");
 
+// Show button after scrolling 100px
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+});
+
+// Smooth scroll to top on click
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+<!-- 🔻 FOOTER -->
+<footer>
+<p>© 2026 Machakos Institute of Technology<br>Master the training experience the rewards</p>
+</footer>
 
     </body>
     </html>

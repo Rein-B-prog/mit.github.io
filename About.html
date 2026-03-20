@@ -1,116 +1,130 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-<title>Machakos Institute of Technology</title>
+<title>About - Machakos Institute of Technology</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+<!-- 🔥 SIDEBAR (TOP LEFT) -->
+<aside class="sidebar">
+  <h3>Connect with us</h3>
 
+  <a href="https://www.facebook.com/mit.ac.ke" target="_blank">
+    <i class="fa-brands fa-facebook"></i> Facebook
+  </a><br>
 
-<!-- Mobile toggle button -->
+  <a href="https://wa.me/254741153342" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a><br>
+
+  <a href="mailto:mit@gmail.com">
+    <i class="fa-solid fa-envelope"></i> mit@gmail.com
+  </a>
+</aside>
+
+<!-- Mobile toggle -->
 <button class="menu-toggle" id="menuToggle">☰ Menu</button>
 
-<!-- Navigation bar -->
-<nav class="horizontal-nav" id="navBar">
-  <header class="blink">
-  <p style="color:green;">Machakos Institute of Technology</p>
-  <P>Master the training experience the rewards</P>
-</header>
-  
-  <ul>
+<!-- 🔷 NAVBAR -->
+<nav class="horizontal-nav">
+  <header>
+    <p style="color:rgb(252, 5, 46);">Machakos Institute of Technology</p>
+    <p class="blink">Master the training experience the rewards</p>
+  </header>
+
+  <ul id="navBar">
     <li><a href="index.html">Home</a></li>
     <li><a href="About.html">About</a></li>
     <li><a href="Academic.html">Academic</a></li>
     <li><a href="Admissions.html">Admissions</a></li>
-    <li><a href="Application.html"class="blink">Apply</a></li>
+    <li><a href="Application.html" class="blink">Apply</a></li>
     <li><a href="News.html">News</a></li>
     <li><a href="Contact.html">Contact</a></li>
   </ul>
 </nav>
+
+<!-- 🔶 CONTENT -->
+<section class="content">
+
+<h2>About Us</h2>
+
+<p>
+Machakos Institute of Technology is a TVET institution located along the
+Machakos–Nairobi highway at Kinyali House, 2nd floor.
+</p>
+
+<p>
+The institution offers a wide range of technical and vocational courses
+designed to equip students with practical skills for the job market.
+</p>
+
+<p>
+We pride ourselves on providing quality education, experienced instructors,
+and modern learning facilities to ensure student success.
+</p>
+
+<h3>Our Mission</h3>
+<p>
+To train students to practice at the highest level of professional competence.
+</p>
+
+<h3>Our Vision</h3>
+<p>
+To be a leading institution in technical and vocational training.
+</p>
+
+<h3>Our Core Values</h3>
+<ul>
+<li>Excellence in training</li>
+<li>Integrity</li>
+<li>Innovation</li>
+<li>Professionalism</li>
+</ul>
+
+</section>
+
+<!-- 🔻 FOOTER -->
+<footer>
+<p>© 2026 Machakos Institute of Technology<br>Master the training experience the rewards</p>
+</footer>
+
+<!-- 🔥 MENU SCRIPT -->
 <script>
 const toggleBtn = document.getElementById('menuToggle');
-const navBarUl = document.querySelector('.horizontal-nav ul');
+const navBarUl = document.getElementById('navBar');
 
 toggleBtn.addEventListener('click', () => {
-  navBarUl.classList.toggle('show'); // toggle slide down/up
+  navBarUl.classList.toggle('show');
+});
+</script>
+
+<button id="backToTop" title="Go to top">↑</button>
+<script>
+const backToTopBtn = document.getElementById("backToTop");
+
+// Show button after scrolling 100px
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+});
+
+// Smooth scroll to top on click
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
 </script>
 
 
-<p>
-Machakos Institute of Technology is a TVET school located alongside Machakos-Nairobi highway. 
-The institution is located in Kinyali House second floor.
-</p>
-
-<p>
-Machakos Institute of Technology offers various courses in the field of technology and engineering. 
-The institution is known for its quality education and skilled instructors. Students at Machakos 
-Institute of Technology have access to modern facilities and resources to enhance their learning experience.
-</p>
-  <section>
-
-<p style="color:yellow">
-Our school motto is:<br>
-Master the training and Experience the rewards
-</p>
-  </section>
-  <div>
-<p>
-The institution is a registered technical training college focused on
-  <br>providing quality and affordable education<br>
-  to students in the region and practical education.
-</p>
-  </div>
-    <section>
-
-<h3>Our Core Values</h3>
-
-<ul>
-<li><strong>Mission:</strong> To train students to practice at the highest level of professional competence.</li>
-
-<li><strong>Focus:</strong> Offering technical, vocational, and business courses (including KNEC courses).</li>
-
-<li><strong>Goal:</strong> Producing holistic individuals.</li>
-</ul>
-  </div>
-</section>
-<script>
-
-let slideIndex = 0;
-showSlides();
-
-function showSlides(){
-
-let slides = document.getElementsByClassName("slide");
-
-for(let i=0;i<slides.length;i++){
-slides[i].style.display="none";
-}
-
-slideIndex++;
-
-if(slideIndex>slides.length){
-slideIndex=1;
-}
-
-slides[slideIndex-1].style.display="block";
-
-setTimeout(showSlides,3000);
-
-}
-
-</script>
-
 </body>
 </html>
-
-
-
-
-
-<
